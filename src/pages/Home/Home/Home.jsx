@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import Skills from "../Skills/Skills";
 import AboutMe from "../aboutMe/aboutMe";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
           <Header></Header>
             <AboutMe></AboutMe>
+            <Skills></Skills>
         </div>
     );
 };
