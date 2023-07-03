@@ -7,7 +7,7 @@ const NavBar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link>About</Link>
+        <Link to='#about'>About</Link>
       </li>
       <li>
         <Link to="">Skills</Link>
@@ -47,7 +47,7 @@ const NavBar = () => {
             {navOption}
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
           Moktubat
         </Link>
       </div>

@@ -3,64 +3,57 @@ import coding from "../../../assets/coding.json";
 import team from "../../../assets/team.png";
 import time from "../../../assets/time.png";
 import learner from "../../../assets/learner.png";
+import resume from "../../../../public/Moktubat-Jaman-Resume.pdf";
 import communication from "../../../assets/communication.png";
-import Typed from 'typed.js';
+import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
-const Header = () => {
-    const el = useRef(null);
 
-    useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings:["Web Developer", "MERN Stack Developer"],
-            startDelay:300,
-            typeSpeed:150,
-            backDelay:150,
-            smartBackspace:true,
-            showCursor:false,
-            loop:true,
-        })
-    })
+const Header = () => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Front End Developer", "MERN Stack Developer"],
+      startDelay: 300,
+      typeSpeed: 150,
+      backDelay: 150,
+      smartBackspace: true,
+      showCursor: false,
+      loop: true,
+    });
+    console.log(typed);
+  });
   return (
-    <div className="container">
-      <div className="relative w-full h-full flex flex-col justify-center items-center bg-gray-50 overflow-hidden">
+    <div>
+      <div className="relative w-full h-full flex flex-col justify-center items-center bg-[#030712] overflow-hidden">
         <div className="pt-6 sm:pt-12 lg:pt-24 w-full flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-gray-600">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-white">
             <div className="p-5 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-              <h1 className="py-5 text-3xl sm:text-5xl font-bold tracking-wide text-gray-900">
-              Hi, I am Moktubat Jaman                
+              <h1 className="py-5 text-3xl sm:text-5xl font-bold tracking-wide text-white">
+                Hi, I am Moktubat Jaman
               </h1>
-              <h3 className="text-1xl sm:text-5xl text-gray-900 pb-2">
-              I am <span ref={el}></span>
+              <h3 className="text-1xl sm:text-5xl text-white pb-2">
+                I am <span ref={el}></span>
               </h3>
               <p className="text-lg font-semibold text-gray-400 tracking-wide">
-              I am a MERN Stack Front-end developer. I have experience building RESTful APIs, working with MongoDB for data storage and retrieval, building strong backend systems using Node.js and Express.js, and designing clear user interfaces with React.
+                I am a MERN Stack Front-end developer. I have experience
+                building RESTful APIs, working with MongoDB for data storage and
+                retrieval, building strong backend systems using Node.js and
+                Express.js, and designing clear user interfaces with React.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center">
                 <button>
                   <a
-                    href="#_"
+                    href={resume}
                     className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-[#7A3E3E] border-2 border-[#7A3E3E] rounded-full hover:text-white group hover:bg-[#643A6B]"
                   >
                     <span className="absolute left-0 block w-full h-0 transition-all bg-[#643A6B] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
                     <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        ></path>
-                      </svg>
+                    <svg width="100px" height="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="download"> <g> <path d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path> <g> <polyline data-name="Right" fill="none" id="Right-2" points="7.9 12.3 12 16.3 16.1 12.3" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></polyline> <line fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="2.7" y2="14.2"></line> </g> </g> </g> </g> </g></svg>
                     </span>
-                    <span className="relative">Explore Now</span>
+                    <span className="relative">My Resume</span>
                   </a>
                 </button>
               </div>
@@ -79,7 +72,7 @@ const Header = () => {
         </div>
 
         {/* :FEATURES */}
-        <div className="container mt-14 p-5 w-full grid grid-cols-12 sm:grid-cols-5 gap-2 text-xs md:text-sm">
+        <div className="container mt-7 p-4 w-full grid grid-cols-12 sm:grid-cols-5 gap-2 text-xs md:text-sm">
           <div className="col-span-4 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">
             <img
               className="w-[40px] h-[40px] mb-2"
