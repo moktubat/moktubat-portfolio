@@ -1,22 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const navOption = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+          Home
+        </Link>
       </li>
       <li>
-        <Link to='#about'>About</Link>
+        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+          About
+        </Link>
       </li>
       <li>
-        <Link to="">Skills</Link>
+        <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+          Skills
+        </Link>
       </li>
       <li>
-        <Link to="">Projects</Link>
+        <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
+          Projects
+        </Link>
       </li>
       <li>
-        <Link to="">Contact</Link>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          Contact
+        </Link>
       </li>
     </>
   );

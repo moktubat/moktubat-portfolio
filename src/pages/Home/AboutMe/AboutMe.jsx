@@ -1,6 +1,6 @@
 const aboutMe = () => {
   return (
-    <div>
+    <div id="about">
       <div className="antialiased text-gray-900 leading-normal tracking-wider bg-[#030712] pt-8">
         <h3 className="text-4xl font-semibold text-center text-white">
           About <span className="text-green-600">Me</span>
@@ -15,7 +15,7 @@ const aboutMe = () => {
               <div
                 className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url("https://source.unsplash.com/MP0IUfwrn0A")`,
+                  backgroundImage: `url("https://i.ibb.co/k3zHw5c/me.jpg")`,
                 }}
               ></div>
 
@@ -108,7 +108,7 @@ const aboutMe = () => {
 
           <div className="w-full lg:w-2/5">
             <img
-              src="https://source.unsplash.com/MP0IUfwrn0A"
+              src="https://i.ibb.co/k3zHw5c/me.jpg"
               className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
             />
           </div>
