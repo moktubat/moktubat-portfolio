@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
 
         <div className="bg-[#0F172A] p-6 text-center dark:text-gray-200">
-          <span>© 2023 Copyright:</span>
+          <span>© 2023 Copyright: </span>
           <a
             className="font-semibold text-gray-200 dark:text-gray-200"
             href="https://github.com/moktubat"

@@ -4,27 +4,27 @@ const NavBar = () => {
   const navOption = (
     <>
       <li>
-        <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="bg-green-600" to="/" spy={true} smooth={true} offset={50} duration={500}>
           Home
         </Link>
       </li>
       <li>
-        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="bg-green-600" to="about" spy={true} smooth={true} offset={50} duration={500}>
           About
         </Link>
       </li>
       <li>
-        <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="bg-green-600" to="skills" spy={true} smooth={true} offset={50} duration={500}>
           Skills
         </Link>
       </li>
       <li>
-        <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="bg-green-600" to="projects" spy={true} smooth={true} offset={50} duration={500}>
           Projects
         </Link>
       </li>
       <li>
-        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+        <Link activeClass="bg-green-600" to="contact" spy={true} smooth={true} offset={50} duration={500}>
           Contact
         </Link>
       </li>
