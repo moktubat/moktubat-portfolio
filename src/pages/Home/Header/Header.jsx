@@ -3,8 +3,9 @@ import coding from "../../../assets/coding.json";
 import team from "../../../assets/team.png";
 import time from "../../../assets/time.png";
 import learner from "../../../assets/learner.png";
-import resume from "../../../../public/Moktubat-Jaman-Resume.pdf";
+import resume from "../../../../src/Moktubat-Jaman-Resume.pdf";
 import communication from "../../../assets/communication.png";
+import positive from "../../../assets/positive.png";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
@@ -86,7 +87,7 @@ const Header = () => {
           <div className="col-span-4 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">
             <img
               className="w-[40px] h-[40px] mb-2"
-              src={communication}
+              src={positive}
               alt=""
             />
             <span className="text-center">A Positive Attitude</span>
@@ -103,7 +104,7 @@ const Header = () => {
 
           <div className="col-span-4 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">
             <img className="w-[40px] h-[40px] mb-2" src={time} alt="" />
-            <span className="text-center">Good Time and Task Management</span>
+            <span className="text-center">Good Time and <br /> Task Management</span>
           </div>
 
           <div className="col-span-6 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">

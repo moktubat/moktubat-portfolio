@@ -3,11 +3,11 @@ const Footer = () => {
     <div>
       <footer className="bg-[#0F172A] text-center text-gray-200 dark:bg-gray-200 dark:text-neutral-200 lg:text-left">
         <div className="mx-6 py-10 text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h6 className="mb-4 flex items-center justify-between font-semibold uppercase md:justify-start">
+              <h3 className="text-2xl text-green-500 mb-4 flex items-center justify-between font-semibold uppercase md:justify-start">
                 Moktubat Jaman
-              </h6>
+              </h3>
               <p>
               I am MJ, Working with MERN Stack Development.
               </p>
@@ -18,22 +18,22 @@ const Footer = () => {
                 Useful links
               </h6>
               <p className="mb-4">
-                <a href="/" className="text-gray-200 dark:text-neutral-200">
+                <a href="/" className="text-gray-200 dark:text-neutral-200 hover:text-green-500">
                   Home
                 </a>
               </p>
               <p className="mb-4">
-                <a href="about" className="text-gray-200 dark:text-neutral-200">
+                <a href="about" className="text-gray-200 dark:text-neutral-200 hover:text-green-500">
                 About
                 </a>
               </p>
               <p className="mb-4">
-                <a href="skills" className="text-gray-200 dark:text-neutral-200">
+                <a href="skills" className="text-gray-200 dark:text-neutral-200 hover:text-green-500">
                 Skills
                 </a>
               </p>
               <p>
-                <a href="projects" className="text-gray-200 dark:text-neutral-200">
+                <a href="projects" className="text-gray-200 dark:text-neutral-200 hover:text-green-500">
                 Projects
                 </a>
               </p>

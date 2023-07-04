@@ -1,3 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const Projects = () => {
   const projectsItems = [
     {
@@ -36,7 +40,7 @@ const Projects = () => {
         <h5 className="text-center text-base-300">My awesome works</h5>
       <div className="grid grid-cols-1 lg:grid-cols-3 my-10 gap-5 mx-5">
         {projectsItems.map((item) => (
-          <div className="projectCard border border-green-500 rounded-lg" key={item.id}>
+          <div className="projectCard border border-green-500 rounded-lg" key={item.id} data-aos="zoom-out-up">
             <div className="relative max-w-full h-72 overflow-hidden rounded-t-lg">
               <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
                 <img
@@ -48,8 +52,8 @@ const Projects = () => {
             </div>
             <div className="">
               <div className="p-3 mb-10">
-                <p className="text-title">{item.projectName}</p>
-                <p className="break-words">{item.details}</p>
+                <p className="text-title text-green-500 text-2xl font-bold pb-2">{item.projectName}</p>
+                <p className="break-words text-gray-200">{item.details}</p>
               </div>
             </div>
             <div className="projectCard-button flex gap-3 justify-between m-3 ">

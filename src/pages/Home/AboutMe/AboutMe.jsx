@@ -1,3 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 const aboutMe = () => {
   return (
     <div id="about">
@@ -10,6 +14,9 @@ const aboutMe = () => {
           <div
             id="about"
             className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
           >
             <div className="p-4 md:p-10 text-center lg:text-left">
               <div
@@ -106,7 +113,12 @@ const aboutMe = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-2/5">
+          <div
+            className="w-full lg:w-2/5"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="https://i.ibb.co/k3zHw5c/me.jpg"
               className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
