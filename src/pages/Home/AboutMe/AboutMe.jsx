@@ -11,10 +11,10 @@ const aboutMe = () => {
         </h3>
         <h5 className="text-center text-base-300">My introduction</h5>
         
-        <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0">
+        <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-32 lg:my-0">
           <div
             id="about"
-            className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+            className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 overflow-x-hidden"
             data-aos="fade-right"
             data-aos-offset="400"
             data-aos-easing="ease-in-sine"

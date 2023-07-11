@@ -7,7 +7,7 @@ import AboutMe from "../aboutMe/aboutMe";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header></Header>
       <AboutMe></AboutMe>
       <Skills></Skills>
