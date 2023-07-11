@@ -1,30 +1,70 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const navOption = (
     <>
       <li>
-        <Link activeClass="bg-green-600" to="/" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          className="hover:text-green-500"
+          activeClass="bg-green-600"
+          to="/"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link activeClass="bg-green-600" to="about" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          className="hover:text-green-500"
+          activeClass="bg-green-600"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           About
         </Link>
       </li>
       <li>
-        <Link activeClass="bg-green-600" to="skills" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          className="hover:text-green-500"
+          activeClass="bg-green-600"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Skills
         </Link>
       </li>
       <li>
-        <Link activeClass="bg-green-600" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          className="hover:text-green-500"
+          activeClass="bg-green-600"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Projects
         </Link>
       </li>
       <li>
-        <Link activeClass="bg-green-600" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          className="hover:text-green-500"
+          activeClass="bg-green-600"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           Contact
         </Link>
       </li>
@@ -57,7 +97,10 @@ const NavBar = () => {
             {navOption}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-xl text-green-600"
+        >
           Moktubat
         </Link>
       </div>

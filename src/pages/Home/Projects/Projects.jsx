@@ -34,13 +34,17 @@ const Projects = () => {
   ];
   return (
     <div id="projects" className="bg-[#030712] py-20 min-h-screen">
-        <h3 className="text-4xl font-semibold text-center text-white">
-          My <span className="text-green-600">Projects</span>
-        </h3>
-        <h5 className="text-center text-base-300">My awesome works</h5>
+      <h3 className="text-4xl font-semibold text-center text-white">
+        My <span className="text-green-600">Projects</span>
+      </h3>
+      <h5 className="text-center text-base-300">My awesome works</h5>
       <div className="grid grid-cols-1 lg:grid-cols-3 my-10 gap-5 mx-5">
         {projectsItems.map((item) => (
-          <div className="projectCard border border-green-500 rounded-lg" key={item.id} data-aos="zoom-out-up">
+          <div
+            className="projectCard border border-green-500 rounded-lg"
+            key={item.id}
+            data-aos="zoom-out-up"
+          >
             <div className="relative max-w-full h-72 overflow-hidden rounded-t-lg">
               <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
                 <img
@@ -52,7 +56,9 @@ const Projects = () => {
             </div>
             <div className="">
               <div className="p-3 mb-10">
-                <p className="text-title text-green-500 text-2xl font-bold pb-2">{item.projectName}</p>
+                <p className="text-title text-green-500 text-2xl font-bold pb-2">
+                  {item.projectName}
+                </p>
                 <p className="break-words text-gray-200">{item.details}</p>
               </div>
             </div>

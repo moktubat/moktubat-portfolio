@@ -31,7 +31,8 @@ const Header = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-white">
             <div className="p-5 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
               <h1 className="py-5 text-2xl sm:text-5xl font-bold tracking-wide text-white">
-                <span className="text-green-600">Hello</span> <br /> My name is Moktubat Jaman
+                <span className="text-green-600">Hello</span> <br /> My name is
+                Moktubat Jaman
               </h1>
               <h3 className="text-1xl sm:text-5xl text-white pb-2">
                 I am <span className="text-green-600" ref={el}></span>
@@ -85,11 +86,7 @@ const Header = () => {
         {/* :FEATURES */}
         <div className="container mt-7 p-4 w-full grid grid-cols-12 sm:grid-cols-5 gap-2 text-xs md:text-sm">
           <div className="col-span-4 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">
-            <img
-              className="w-[40px] h-[40px] mb-2"
-              src={positive}
-              alt=""
-            />
+            <img className="w-[40px] h-[40px] mb-2" src={positive} alt="" />
             <span className="text-center">A Positive Attitude</span>
           </div>
 
@@ -104,7 +101,9 @@ const Header = () => {
 
           <div className="col-span-4 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">
             <img className="w-[40px] h-[40px] mb-2" src={time} alt="" />
-            <span className="text-center">Good Time and <br /> Task Management</span>
+            <span className="text-center">
+              Good Time and <br /> Task Management
+            </span>
           </div>
 
           <div className="col-span-6 sm:col-span-1 inline-flex flex-col items-center border-r border-gray-300 text-gray-400 uppercase">

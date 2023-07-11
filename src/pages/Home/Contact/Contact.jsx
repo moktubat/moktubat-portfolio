@@ -1,4 +1,29 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ysuvadb",
+        "template_5lq12ea",
+        form.current,
+        "nJBet1H1MEkGQn1pR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <div>
@@ -7,9 +32,9 @@ const Contact = () => {
           className="relative w-full min-h-screen bg-[#030712] text-green-500"
         >
           <h3 className="text-4xl font-semibold text-center text-white">
-          Contact <span className="text-green-600">Me</span>
-      </h3>
-      <h5 className="text-center text-base-300 mt-1">Get in touch</h5>
+            Contact <span className="text-green-600">Me</span>
+          </h3>
+          <h5 className="text-center text-base-300 mt-1">Get in touch</h5>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-800 h-32 w-full"></div>
 
           <div className="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
@@ -66,6 +91,8 @@ const Contact = () => {
             </div>
 
             <form
+              ref={form}
+              onSubmit={sendEmail}
               action="#"
               className="w-full md:w-1/2 border border-green-500 p-6 bg-gray-900"
             >
@@ -75,6 +102,7 @@ const Contact = () => {
                   <label>Name</label>
                   <input
                     type="text"
+                    name="user_name"
                     id="name"
                     className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-green-500 focus:outline-none focus:bg-gray-800 focus:text-green-500"
                   />
@@ -82,7 +110,8 @@ const Contact = () => {
                 <div className="flex flex-col mb-3">
                   <label>Email</label>
                   <input
-                    type="text"
+                    type="email"
+                    name="user_email"
                     id="email"
                     className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-green-500 focus:outline-none focus:bg-gray-800 focus:text-green-500"
                   />
@@ -90,6 +119,7 @@ const Contact = () => {
                 <div className="flex flex-col mb-3">
                   <label>Message</label>
                   <textarea
+                    name="message"
                     rows="4"
                     id="message"
                     className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-green-500 focus:outline-none focus:bg-gray-800 focus:text-green-500"
@@ -97,12 +127,36 @@ const Contact = () => {
                 </div>
               </div>
               <div className="w-full pt-3">
-                <button
+                <input
                   type="submit"
+                  value="Send Message"
                   className="w-full bg-gray-900 border border-green-500 px-4 py-2 transition duration-50 focus:outline-none font-semibold hover:bg-green-500 hover:text-white text-xl cursor-pointer"
-                >
-                  Send Message
-                </button>
+                />
+              </div>
+              <div className="divider before:bg-slate-600 after:bg-slate-600">
+                OR
+              </div>
+              <div className="flex justify-center">
+                <p className="flex items-center hover:text-white hover:bg-green-500 p-2">
+                  <svg
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mr-2"
+                    viewBox="0 0 24 24"
+                    style={{
+                      enableBackground: "new 0 0 237.832 237.832",
+                    }}
+                    xmlSpace="preserve"
+                    width={24}
+                    height={24}
+                  >
+                    <path d="M23.106 3.423H0.288C0.4 3.423 0 3.823 0 4.316v15.368c0 0.494 0.4 0.894 0.893 0.894H23.106a0.894 0.894 0 0 0 0.894 -0.894V4.316c0 -0.493 -0.4 -0.894 -0.894 -0.894zm-0.802 14.962c0 0.41 -0.34 0.742 -0.758 0.742h-1.245v-11.722L12.562 12.429c-0.17 0.111 -0.366 0.166 -0.562 0.166s-0.392 -0.055 -0.562 -0.166L3.699 7.405v11.722h-1.245c-0.418 0 -0.758 -0.332 -0.758 -0.742V5.615c0 -0.41 0.34 -0.742 0.758 -0.742h1.027l8.519 5.531 8.519 -5.531h1.027c0.418 0 0.758 0.332 0.758 0.742v12.769z" />
+                  </svg>
+                  <span className="pr-2">Email: </span>
+                  <a href="mailto:moktubatjaman@gmail.com">
+                    moktubatjaman@gmail.com
+                  </a>
+                </p>
               </div>
             </form>
           </div>

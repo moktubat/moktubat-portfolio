@@ -20,7 +20,10 @@ const Skills = () => {
       <h5 className="text-center text-base-300 mt-1">What do I know?</h5>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-right">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-right"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={html} alt="" />
@@ -33,7 +36,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-down-right">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-down-right"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={css} alt="" />
@@ -46,7 +52,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-down-left">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-down-left"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={bootstrap} alt="" />
@@ -59,7 +68,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-left">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-left"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={tailwind} alt="" />
@@ -74,7 +86,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-right">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-right"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={react} alt="" />
@@ -87,7 +102,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-up">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-up"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={node} alt="" />
@@ -100,7 +118,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl" data-aos="fade-down">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-down"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={express} alt="" />
@@ -113,7 +134,10 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"  data-aos="fade-left">
+          <div
+            className="flex flex-col justify-between p-5 border border-green-600 rounded-xl"
+            data-aos="fade-left"
+          >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 group hover:scale-125 duration-200">
                 <img className="" src={mongo} alt="" />
