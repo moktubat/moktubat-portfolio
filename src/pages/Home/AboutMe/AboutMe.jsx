@@ -13,15 +13,15 @@ const aboutMe = () => {
         
         <div className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto mt-32 lg:my-0">
           <div
-            id="about"
+            
             className="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 overflow-x-hidden"
             data-aos="fade-right"
             data-aos-offset="400"
             data-aos-easing="ease-in-sine"
           >
-            <div className="p-4 md:p-10 text-center lg:text-left">
+            <div className="p-4 md:p-6 text-center lg:text-left">
               <div
-                className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                className="block lg:hidden rounded-full shadow-xl mx-auto h-48 w-48 bg-cover bg-center"
                 style={{
                   backgroundImage: `url("https://i.ibb.co/k3zHw5c/me.jpg")`,
                 }}
@@ -48,7 +48,7 @@ const aboutMe = () => {
                 </button>
               </div>
 
-              <div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+              <div className="mt-6 pb-7 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
                 <a
                   className="link"
                   href="https://www.facebook.com/shadhin.reja/"

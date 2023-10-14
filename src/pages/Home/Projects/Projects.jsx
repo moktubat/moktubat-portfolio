@@ -6,6 +6,15 @@ const Projects = () => {
   const projectsItems = [
     {
       id: 1,
+      projectImgURL: "https://i.ibb.co/kKLZBK4/chemistry-corner.png",
+      projectName: "Chemistry Corner",
+      details:
+        "This website is based on an online dating platform designed to reorganize the way people connect and find meaningful relationships. With a range of features, it's poised to redefine the online dating experience.",
+      github: "https://github.com/sobujhasan1000/chemistry-corner",
+      web: "https://github.com/sobujhasan1000/chemistry-corner-server",
+    },
+    {
+      id: 2,
       projectImgURL: "https://i.ibb.co/GPdz3mF/summer-camp.png",
       projectName: "Jujutsu Club",
       details:
@@ -14,7 +23,7 @@ const Projects = () => {
       web: "https://summer-camp-client-3dda4.web.app/",
     },
     {
-      id: 2,
+      id: 3,
       projectImgURL: "https://i.ibb.co/4fgfLVQ/toy-marketplace.png",
       projectName: "LEGO VILLA",
       details:
@@ -23,7 +32,7 @@ const Projects = () => {
       web: "https://toy-marketplace-client-s-fbb14.web.app/",
     },
     {
-      id: 3,
+      id: 4,
       projectImgURL: "https://i.ibb.co/kgqyp1p/Buck-Donald-s.png",
       projectName: "Tasty Tortellini",
       details:

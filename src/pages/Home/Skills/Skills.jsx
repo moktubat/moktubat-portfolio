@@ -13,7 +13,7 @@ AOS.init();
 
 const Skills = () => {
   return (
-    <div id="skills" className="bg-[#030712] pt-8">
+    <div id="skills" className="bg-[#030712] pt-8" style={{ scrollBehavior: 'smooth' }}>
       <h3 className="text-4xl font-semibold text-center text-white">
         My <span className="text-green-600">Skills</span>
       </h3>
