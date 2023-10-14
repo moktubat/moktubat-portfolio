@@ -7,7 +7,7 @@ const Projects = () => {
     {
       id: 1,
       projectImgURL: "https://i.ibb.co/kKLZBK4/chemistry-corner.png",
-      projectName: "Chemistry Corner",
+      projectName: "Chemistry Corner (Team Project)",
       details:
         "This website is based on an online dating platform designed to reorganize the way people connect and find meaningful relationships. With a range of features, it's poised to redefine the online dating experience.",
       github: "https://github.com/sobujhasan1000/chemistry-corner",
